@@ -1,0 +1,349 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Orbit - Launch Your Vision</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for a futuristic, Grok-like feel */
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Inter', sans-serif;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            transition: all 0.3s ease;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="glass fixed w-full top-0 z-10 py-4 px-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-400">Startup Orbit</h1>
+        <div class="space-x-6">
+            <a href="#home" class="hover:text-blue-400 transition">Home</a>
+            <a href="#my-posts" class="hover:text-blue-400 transition">My Posts</a>
+            <a href="#create" class="bg-blue-500 text-white px-4 py-2 rounded-full glow hover:bg-blue-600 transition">Post a Startup</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center justify-center h-screen text-center px-4">
+        <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            Launch Your <span class="text-blue-400">Vision</span> to the Stars
+        </h2>
+        <p class="text-lg md:text-xl max-w-2xl mb-8 pulse">
+            Discover, share, and grow innovative startup ideas with a community that thrives on creativity.
+        </p>
+        <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full text-lg glow hover:from-blue-600 hover:to-purple-700 transition">
+            Explore Startups
+        </button>
+    </section>
+
+    <!-- My Posts Section -->
+    <section id="my-posts" class="py-16 px-8">
+        <h3 class="text-4xl font-bold text-center mb-12">My Startup Ideas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Startup Card 1 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Wedding Wear Revival</h4>
+                <p class="mt-2 text-gray-300">
+                    <strong>Concept:</strong> Step into a wedding where every outfit is a masterpiece—Wedding Wear Revival crafts bespoke attire that weaves personal stories into fabric. Imagine gowns and suits with removable designs: family photos shimmering in embroidery, names etched in elegant threads, and symbols like a hidden heart or a couple’s monogram, blending tradition with unforgettable flair.<br>
+                    <strong>Market Opportunity:</strong> The wedding industry is a global titan, thriving on couples craving originality. We’re targeting the elite—urban couples aged 25-40—who demand celebrations that light up Instagram and linger in memory, in a market hungry for the next big trend.<br>
+                    <strong>Offerings:</strong> Our artisans deliver magic: intimate design consultations to capture every dream, a palette of luxurious fabrics—silk that flows like water, cotton soft as a whisper, velvet rich as royalty—and precision alterations for flawless elegance. These are heirlooms, reusable yet timeless.<br>
+                    <strong>Marketing Plan:</strong> We’ll dazzle the world through Instagram and Pinterest with jaw-dropping visuals, join forces with top wedding influencers and planners, and command attention at dazzling bridal expos. Every client becomes an ambassador, spreading our name like wildfire.<br>
+                    <strong>Operations:</strong> A state-of-the-art design studio hums with visionary artists, while a production hub of master tailors and embroiderers brings each creation to life, sourced from the finest fabric houses on the planet.<br>
+                    <strong>Team:</strong> A visionary CEO charts the course, a genius Design Head dreams in stitches, a bold Marketing Head ignites the hype, and an Operations Head orchestrates perfection—together, we’re rewriting wedding history.
+                </p>
+            </div>
+            <!-- Startup Card 2 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Hot Wheels Bidding</h4>
+                <p class="mt-2 text-gray-300">
+                    <strong>Concept:</strong> Buckle up for Hot Wheels Bidding—a pulse-pounding arena where only 2-3 rare Hot Wheels cars hit the stage daily. It’s not just a sale; it’s a high-octane spectacle. Collectors battle it out, and the champion claims the car plus a massive share of the bids—a treasure hunt meets adrenaline rush.<br>
+                    <strong>Market Opportunity:</strong> Hot Wheels isn’t child’s play—it’s a global obsession, with collectors yearning for the rarest finds. Our daily scarcity turns casual fans into fervent bidders, tapping into a timeless passion with explosive potential.<br>
+                    <strong>Offerings:</strong> We unearth automotive gems—vintage speedsters, limited-edition marvels—and stage electrifying auctions that feel like a race to the finish line. Every car is a trophy; every win, a legend.<br>
+                    <strong>Marketing Plan:</strong> Social media ignites with teasers of gleaming chrome, toy influencers fuel the frenzy, and our sleek platform becomes the go-to hub for collectors worldwide. Winners’ tales will echo, pulling in crowds.<br>
+                    <strong>Operations:</strong> A lean, razor-sharp operation: we hunt down iconic cars, orchestrate seamless auctions, and ship victories with precision. It’s simple, scalable, and unstoppable.<br>
+                    <strong>Team:</strong> A sourcing maestro tracks down rarities, a tech wizard runs the show, and a marketing dynamo sets the world buzzing—together, we’re turbocharging a revolution.
+                </p>
+            </div>
+            <!-- Startup Card 3 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Custom Chatbot Setup</h4>
+                <p class="mt-2 text-gray-300">
+                    <strong>Concept:</strong> Meet the future of small business—a Custom Chatbot Setup that’s like hiring a tireless, charming assistant. Picture it: a bot guiding shoppers through a bustling mall, welcoming parents at a school fair, or chatting with customers on a local bakery’s site, answering “Where’s the cake?” with a grin.<br>
+                    <strong>Market Opportunity:</strong> Small businesses—boutiques, kiosks, schools—are the heartbeat of communities, yet they’re starved for smart, affordable tech. We’re their secret weapon, ready to transform how they connect in a tech-hungry world.<br>
+                    <strong>Offerings:</strong> We build bots with soul—customized to be witty or warm, they blend into websites or roam events, solving problems like “Which way to the exit?” or “What’s on sale?” with effortless charm. It’s innovation that feels human.<br>
+                    <strong>Marketing Plan:</strong> We’ll storm local business circles, dazzle at trade shows with live demos, and roll out trials that leave owners speechless. Social media will glow with stories of delighted customers.<br>
+                    <strong>Operations:</strong> A creative crew designs bots with personality, tech masters weave them into any system, and a support team keeps them sharp—scalable brilliance at its best.<br>
+                    <strong>Team:</strong> A design visionary crafts the magic, a tech genius builds the backbone, and a sales powerhouse wins hearts—together, we’re lifting small businesses to new heights.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Create Post Section -->
+    <section id="create" class="py-16 px-8 bg-gradient-to-b from-transparent to-[#0f172a]">
+        <h3 class="text-4xl font-bold text-center mb-12">Post Your Startup</h3>
+        <form class="max-w-xl mx-auto glass p-8 rounded-lg">
+            <input type="text" placeholder="Startup Name" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <textarea placeholder="Description" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white h-32 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            <input type="text" placeholder="Tags (e.g., AI, GreenTech)" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-full glow hover:bg-blue-600 transition">Submit Startup</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-400">
+        <p>&copy; 2025 Startup Orbit. Built for dreamers, by dreamers.</p>
+    </footer>
+
+    <script>
+        // Simple JS for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Orbit - Launch Your Vision</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Inter', sans-serif;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card-hover {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-hover:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .card-hover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+        .card-hover:hover::before {
+            opacity: 1;
+        }
+        .story-section {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #3b82f6;
+        }
+        .story-title {
+            color: #93c5fd;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        .story-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #d1d5db;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="glass fixed w-full top-0 z-10 py-4 px-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-400">Startup Orbit</h1>
+        <div class="space-x-6">
+            <a href="#home" class="hover:text-blue-400 transition">Home</a>
+            <a href="#my-posts" class="hover:text-blue-400 transition">My Posts</a>
+            <a href="#create" class="bg-blue-500 text-white px-4 py-2 rounded-full glow hover:bg-blue-600 transition">Post a Startup</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center justify-center h-screen text-center px-4">
+        <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            Launch Your <span class="text-blue-400">Vision</span> to the Stars
+        </h2>
+        <p class="text-lg md:text-xl max-w-2xl mb-8 pulse">
+            Discover, share, and grow innovative startup ideas with a community that thrives on creativity.
+        </p>
+        <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full text-lg glow hover:from-blue-600 hover:to-purple-700 transition">
+            Explore Startups
+        </button>
+    </section>
+
+    <!-- My Posts Section -->
+    <section id="my-posts" class="py-16 px-8">
+        <h3 class="text-4xl font-bold text-center mb-12">My Startup Ideas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Startup Card 1 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Wedding Wear Revival</h4>
+                <div class="story-section">
+                    <div class="story-title">The Vision</div>
+                    <p class="story-text">Picture a bride gliding down the aisle, her gown a canvas of memories—photos of her grandparents’ wedding day, her name in golden threads, a tiny heart stitched just for her love. Wedding Wear Revival turns attire into art.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Stage</div>
+                    <p class="story-text">Weddings are a global obsession, a canvas for the elite—city couples aged 25-40 who live for the perfect shot, the viral moment. We’re here to own that spotlight.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Craft</div>
+                    <p class="story-text">Our designers sit with you, sketching dreams into reality. Silk cascades, velvet whispers luxury, cotton hums comfort—every piece tailored to perfection, detachable designs making it a forever keepsake.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Buzz</div>
+                    <p class="story-text">Instagram will explode with our creations, influencers will swoon, and bridal expos will bow. Every wearer becomes our voice, echoing our name across continents.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Machine</div>
+                    <p class="story-text">A humming studio of artists and a workshop of master tailors, fueled by the world’s finest fabrics, craft a legacy one stitch at a time.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Dreamers</div>
+                    <p class="story-text">A fearless CEO, a design poet, a marketing firestarter, and an operations maestro—united to redefine what weddings can be.</p>
+                </div>
+            </div>
+            <!-- Startup Card 2 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Hot Wheels Bidding</h4>
+                <div class="story-section">
+                    <div class="story-title">The Thrill</div>
+                    <p class="story-text">Every day, 2-3 tiny legends—Hot Wheels rarities—ignite a war of wits. Bidders clash, hearts race, and the victor speeds off with the car and a lion’s share of the stakes.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Arena</div>
+                    <p class="story-text">Collectors don’t just buy—they hunt. Hot Wheels is their grail, and our daily drops turn fandom into fever. This is where obsession meets opportunity.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Prize</div>
+                    <p class="story-text">We unveil treasures—sleek vintage racers, gleaming one-offs—and let the auction roar. Each win is a story, each car a crown.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Hype</div>
+                    <p class="story-text">Chrome flashes across social feeds, influencers rev up the crowd, and our platform becomes the pit stop every collector craves. The winners? They’ll shout it from the rooftops.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Engine</div>
+                    <p class="story-text">A tight crew hunts the globe for icons, runs auctions like clockwork, and delivers triumphs fast. It’s lean, mean, and ready to scale.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Crew</div>
+                    <p class="story-text">A rarity tracker, a tech speedster, and a hype machine—three minds fueling a collector’s revolution.</p>
+                </div>
+            </div>
+            <!-- Startup Card 3 -->
+            <div class="glass p-6 rounded-lg card-hover">
+                <h4 class="text-xl font-semibold text-blue-300">Custom Chatbot Setup</h4>
+                <div class="story-section">
+                    <div class="story-title">The Spark</div>
+                    <p class="story-text">A tiny shop needs help—enter our chatbots, tireless allies whispering directions in malls, joking with bakery customers, or guiding a lost parent at a school play. They’re small business superheroes.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Need</div>
+                    <p class="story-text">Local heroes—shops, schools, kiosks—crave tech but can’t break the bank. We’re their bridge to the future, turning chaos into connection.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Magic</div>
+                    <p class="story-text">Bots with heart—sassy or sweet, they chat on websites or roam live events, answering “Where’s the exit?” with a wink. It’s tech that feels like a friend.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Wave</div>
+                    <p class="story-text">We’ll hit local hubs, stun at trade shows with live bot banter, and share tales of happy owners online. This is word-of-mouth on steroids.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Flow</div>
+                    <p class="story-text">Creative minds shape the bots, tech wizards weave them in, and a support squad keeps them humming—ready to grow with every handshake.</p>
+                </div>
+                <div class="story-section">
+                    <div class="story-title">The Souls</div>
+                    <p class="story-text">A design dreamer, a code alchemist, and a deal-closer—three sparks lifting small dreams sky-high.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Post Section -->
+    <section id="create" class="py-16 px-8 bg-gradient-to-b from-transparent to-[#0f172a]">
+        <h3 class="text-4xl font-bold text-center mb-12">Post Your Startup</h3>
+        <form class="max-w-xl mx-auto glass p-8 rounded-lg">
+            <input type="text" placeholder="Startup Name" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <textarea placeholder="Description" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white h-32 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            <input type="text" placeholder="Tags (e.g., AI, GreenTech)" class="w-full p-3 mb-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-full glow hover:bg-blue-600 transition">Submit Startup</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-400">
+        <p>© 2025 Startup Orbit. Built for dreamers, by dreamers.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
